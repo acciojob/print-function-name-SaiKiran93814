@@ -1,6 +1,8 @@
 //your JS code here. If required.
-function AccioJob() {
-  alert(AccioJob.name);
+function functionName() {
+  alert(functionName.name);
 }
 
-AccioJob(); // Alerts "AccioJob"
+// Attach to window explicitly so Cypress can find it
+window.functionName = functionName;
+
